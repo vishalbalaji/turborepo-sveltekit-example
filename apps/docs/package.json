@@ -2,7 +2,7 @@
   "name": "docs",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite dev --port 3001 --open",
+    "dev": "vite dev --port 3001",
     "build": "vite build",
     "package": "vite package",
     "preview": "vite preview",
@@ -12,6 +12,8 @@
     "format": "prettier --write --ignore-path=../../.prettierignore ."
   },
   "dependencies": {
+    "@auth/core": "0.1.4",
+    "@auth/sveltekit": "0.1.6",
     "ui": "workspace:*"
   },
   "devDependencies": {

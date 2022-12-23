@@ -1,15 +1,7 @@
 <script lang="ts">
   import '../app.css';
-  import {
-    Button,
-    DarkMode,
-    Navbar,
-    NavBrand,
-    NavLi,
-    NavUl,
-    NavHamburger,
-    Footer,
-  } from 'flowbite-svelte';
+  // eslint-disable-next-line object-curly-newline
+  import { DarkMode, Navbar, NavBrand, NavLi, NavUl, NavHamburger, Footer } from 'flowbite-svelte';
 </script>
 
 <div class="h-screen w-screen flex flex-col">
@@ -36,13 +28,6 @@
   </Navbar>
 
   <div class="container mx-auto flex-grow">
-    <Button
-      color="purple"
-      on:click={() => {
-        // eslint-disable-next-line no-console
-        console.log('HELLOO');
-      }}>Hello</Button
-    >
     <slot />
   </div>
 
