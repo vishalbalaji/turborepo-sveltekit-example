@@ -1,9 +1,7 @@
 import SvelteKitAuth from '@auth/sveltekit';
 import Google from '@auth/core/providers/google';
 import Github from '@auth/core/providers/github';
-import {
-  GOOGLE_ID, GOOGLE_SECRET, GITHUB_ID, GITHUB_SECRET,
-} from '$env/static/private';
+import { GOOGLE_ID, GOOGLE_SECRET, GITHUB_ID, GITHUB_SECRET } from '$env/static/private';
 
 export const handle = SvelteKitAuth({
   providers: [
